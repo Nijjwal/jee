@@ -32,6 +32,26 @@
 		</h3>
 		<div>Two Servlet filters every web application should have:
 			http://www.onjava.com/lpt/a/4361</div>
+			
+			
+			
+	    <div>
+	    Steps for running RMI application. 
+	    Step 1: Use JDK < 8 and make sure jvm can be created. <br/>
+	    Step 2: Create stub and stop rmi registry. <br/>
+	    Step 3: Execute the following command from terminal.<br/>
+	            rmiregistry -J-Djava.rmi.server.useCodebaseOnly=false<br/>
+	            <i>Do not close the console.</i> <br/>
+	    Step 4: Set RMI compiler properties: <br/>
+	           - g <br/>
+	           - k <br/>
+	           - invoke the compiler inside Eclipse VM <br/>
+	    Step 5: Check Diagnostics <br/>
+	            On server > Right click > Run as > Run configuration > RMI Application > Double click <br/>
+	            to get the Server file > RMI VM Properties > java.rmi.server.codebase > Computer from Classpath > <br/>
+	    Step 6: Make sure Main tab contains your server class > Run <br/>
+	    Step 7: Run client  <br/>
+	    </div>
 
 
 
